@@ -17,5 +17,22 @@ struct CountOfRSANumbersTests {
         #expect(result == 1)
         
     }
+    
+    @Test func range1to10() {
+
+        let result = findCountOfRSANumbers(between: 1, and: 10)
+        
+        #expect(result == 3)
+        
+    }
+
+    @Test func range1to999() {
+
+        let result = findCountOfRSANumbers(between: 1, and: 999)
+        
+        #expect(result == 292)
+        
+    }
+
 
 }
