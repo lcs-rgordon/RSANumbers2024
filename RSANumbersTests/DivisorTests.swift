@@ -7,7 +7,7 @@
 
 import Testing
 
-struct DivisorTests {
+@Suite("Divisor tests") struct DivisorTests {
 
     @Test func findsADivisor() {
         let result = isDivisor(dividend: 12, divisor: 4)
