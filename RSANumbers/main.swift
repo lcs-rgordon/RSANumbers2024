@@ -7,6 +7,28 @@
 
 import Foundation
 
+func findCountOfRSANumbers(between lower: Int, and upper: Int) -> Int {
+    
+    // Intialize counter
+    var count = 0
+    
+    // Loop over numbers in range
+    for i in lower...upper {
+        // Check whether current number is an RSA number
+        let result = isRSA(number: i)
+        // Do something based on result...
+        if result == true {
+            count += 1
+        }
+    }
+    // Return count of RSA numbers in the range given...
+    return count
+}
+
+// Tests
+print("Testing findCountOfRSANumbers function...")
+print(findCountOfRSANumbers(between: 10, and: 12)) // 1
+
 func isRSA(number: Int) -> Bool {
     
     // Initialize counter
@@ -31,7 +53,7 @@ func isRSA(number: Int) -> Bool {
     
 }
 
-// Test
+// Tests
 print("Testing isRSA function...")
 print(isRSA(number: 10)) // true
 print(isRSA(number: 11)) // false
@@ -49,7 +71,7 @@ func isDivisor(dividend: Int, divisor: Int) -> Bool {
     }
 }
 
-// Test
+// Tests
 print("Testing isDivisor function...")
 print(isDivisor(dividend: 12, divisor: 4)) // true
 print(isDivisor(dividend: 13, divisor: 4)) // false
