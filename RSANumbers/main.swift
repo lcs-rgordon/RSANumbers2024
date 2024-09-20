@@ -7,6 +7,35 @@
 
 import Foundation
 
+func isRSA(number: Int) -> Bool {
+    
+    // Initialize counter
+    var count = 0
+    
+    // Loop over possible divisors
+    for j in 1...number {
+        // Check whether current number is a divisor of this number
+        let result = isDivisor(dividend: number, divisor: j)
+        // Do something based on result...
+        if result == true {
+            count += 1
+        }
+    }
+    
+    // Return whether this number is an RSA number...
+    if count == 4 {
+        return true
+    } else {
+        return false
+    }
+    
+}
+
+// Test
+print("Testing isRSA function...")
+print(isRSA(number: 10)) // true
+print(isRSA(number: 11)) // false
+
 func isDivisor(dividend: Int, divisor: Int) -> Bool {
     // Add logic to determine whether provided divisor actually
     // goes evenly into the provided dividend
@@ -21,6 +50,7 @@ func isDivisor(dividend: Int, divisor: Int) -> Bool {
 }
 
 // Test
+print("Testing isDivisor function...")
 print(isDivisor(dividend: 12, divisor: 4)) // true
 print(isDivisor(dividend: 13, divisor: 4)) // false
 
