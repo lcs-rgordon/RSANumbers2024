@@ -7,7 +7,8 @@
 
 import Testing
 
-@Suite("Counting RSA Numbers within a range tests") struct CountOfRSANumbersTests {
+@Suite("Counting RSA Numbers within a range tests")
+struct CountOfRSANumbersTests {
 
     @Test func range10to12() {
 

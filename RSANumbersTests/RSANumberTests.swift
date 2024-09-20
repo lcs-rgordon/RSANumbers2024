@@ -7,7 +7,8 @@
 
 import Testing
 
-@Suite("Is a specific number an RSA Number tests") struct RSANumberTests {
+@Suite("Is a specific number an RSA Number tests")
+struct RSANumberTests {
 
     @Test func isAnRSANumber() {
         let result = isRSA(number: 10)
