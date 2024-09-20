@@ -19,18 +19,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		816495582C9D024300DD8D58 /* RSANumbersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSANumbersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8177AE742C9CFFB6001682B8 /* RSANumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RSANumbers; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		816495602C9D04D900DD8D58 /* Exceptions for "RSANumbers" folder in "RSANumbersTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = 816495572C9D024300DD8D58 /* RSANumbersTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		816495592C9D024300DD8D58 /* RSANumbersTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RSANumbersTests;
+			sourceTree = "<group>";
+		};
 		8177AE762C9CFFB6001682B8 /* RSANumbers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				816495602C9D04D900DD8D58 /* Exceptions for "RSANumbers" folder in "RSANumbersTests" target */,
+			);
 			path = RSANumbers;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		816495552C9D024300DD8D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8177AE712C9CFFB6001682B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				8177AE762C9CFFB6001682B8 /* RSANumbers */,
+				816495592C9D024300DD8D58 /* RSANumbersTests */,
 				8177AE752C9CFFB6001682B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8177AE742C9CFFB6001682B8 /* RSANumbers */,
+				816495582C9D024300DD8D58 /* RSANumbersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +88,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		816495572C9D024300DD8D58 /* RSANumbersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8164955E2C9D024300DD8D58 /* Build configuration list for PBXNativeTarget "RSANumbersTests" */;
+			buildPhases = (
+				816495542C9D024300DD8D58 /* Sources */,
+				816495552C9D024300DD8D58 /* Frameworks */,
+				816495562C9D024300DD8D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				816495592C9D024300DD8D58 /* RSANumbersTests */,
+			);
+			name = RSANumbersTests;
+			packageProductDependencies = (
+			);
+			productName = RSANumbersTests;
+			productReference = 816495582C9D024300DD8D58 /* RSANumbersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8177AE732C9CFFB6001682B8 /* RSANumbers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8177AE7B2C9CFFB6001682B8 /* Build configuration list for PBXNativeTarget "RSANumbers" */;
@@ -92,6 +142,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					816495572C9D024300DD8D58 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					8177AE732C9CFFB6001682B8 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -112,11 +165,29 @@
 			projectRoot = "";
 			targets = (
 				8177AE732C9CFFB6001682B8 /* RSANumbers */,
+				816495572C9D024300DD8D58 /* RSANumbersTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		816495562C9D024300DD8D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		816495542C9D024300DD8D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8177AE702C9CFFB6001682B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +198,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8164955C2C9D024300DD8D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2ZN2W2UQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.RSANumbersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8164955D2C9D024300DD8D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2ZN2W2UQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.RSANumbersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		8177AE792C9CFFB6001682B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -270,6 +371,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8164955E2C9D024300DD8D58 /* Build configuration list for PBXNativeTarget "RSANumbersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8164955C2C9D024300DD8D58 /* Debug */,
+				8164955D2C9D024300DD8D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8177AE6F2C9CFFB6001682B8 /* Build configuration list for PBXProject "RSANumbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
